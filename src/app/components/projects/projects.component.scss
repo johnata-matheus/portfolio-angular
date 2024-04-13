@@ -1,0 +1,30 @@
+@import '../../../styles/variables.scss';
+
+.projects-bg{
+  background-color: $c1;
+
+  .projects {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    .content {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      flex-wrap: wrap;
+      padding: 0px 20px;
+    }
+
+  }
+}
+
+@media(max-width: 800px){
+  .projects-bg{
+
+    .projects{
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+  }
+}
