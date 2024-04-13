@@ -1,0 +1,31 @@
+@import '../../../styles/variables.scss';
+
+.skills-bg {
+  background-color: $c1;
+
+  .skills {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 20px 20px;
+      overflow-x: auto;
+    }
+
+  }
+  
+}
+
+@media(max-width: 800px){
+  .skills-bg{
+
+    .skills{
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+  }
+}
