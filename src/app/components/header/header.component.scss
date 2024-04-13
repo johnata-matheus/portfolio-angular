@@ -1,0 +1,77 @@
+@import '../../../styles/variables.scss';
+
+.header-bg {
+  background-color: $w0;
+
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    gap: 20px;
+
+    .logo a{
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .menu a {
+    font: 500 1.125rem 'Poppins';
+    padding: 12px 0px;
+    display: inline-block;
+  }
+
+  .menu li:last-child a {
+    padding: 12px 24px;
+    border: 1px solid $b2;
+    border-radius: 7px;
+    text-transform: uppercase;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+  }
+
+}
+
+@media(max-width: 1000px){
+
+  .header-bg{
+
+    .menu {
+      display: flex;
+      gap: 32px;
+    }
+
+    .menu li:last-child a {
+      padding: 12px;
+      
+    }
+
+    .menu a{
+      font: 500 1rem 'Poppins';
+    }
+  }
+
+}
+
+@media(max-width: 800px){
+  .header-bg{
+    
+    .menu a{
+      padding: 12px 12px;
+      border: 1px solid $b2;
+      border-radius: 7px;
+    }
+
+    .menu li:last-child a {
+      text-transform: none;
+    }
+  }
+}
