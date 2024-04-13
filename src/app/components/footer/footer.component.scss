@@ -1,0 +1,60 @@
+@import '../../../styles/variables.scss';
+
+.footer-bg {
+  background-color: $w0;
+
+  .footer {
+    padding: 32px 20px 32px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 60px;
+
+    .logo {
+      display: grid;
+      gap: 12px;
+
+      span {
+        font: 400 1rem 'Roboto';
+        color: $c3;
+        margin-left: 12px;
+      }
+    }
+
+    .navigation {
+
+
+      h4 {
+        font: 500 1.25rem 'Roboto';
+        padding: 22px 0px;
+        margin-bottom: 8px;
+      }
+
+      ul {
+        display: flex;
+        gap: 24px;
+
+        a {
+          font: 400 1rem 'Roboto';
+          color: $c3;
+          width: max-content;
+        }
+      }
+    }
+
+  }
+}
+
+@media(max-width: 800px){
+  .footer-bg{
+    .footer{
+      gap: 40px;
+
+      .navigation{
+        ul{
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+}
