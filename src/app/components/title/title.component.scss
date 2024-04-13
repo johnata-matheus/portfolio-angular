@@ -1,0 +1,36 @@
+@import '../../../styles/variables.scss';
+
+.title {
+  font: 700 4rem 'Poppins';
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  margin-bottom: 60px;
+  padding: 0px 20px;
+
+  span {
+    color: $b2;
+  }
+}
+
+.title::after {
+  content: "";
+  display: block;
+  margin-left: 12px;
+  width: 100%;
+  height: 1px;
+  background-color: $b2;
+}
+
+@media(max-width: 1000px){
+  .title{
+    font-size: 3rem;
+  }
+}
+
+@media(max-width: 800px){
+  .title{
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+}
