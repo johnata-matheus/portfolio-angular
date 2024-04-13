@@ -1,0 +1,92 @@
+@import '../../../styles/variables.scss';
+
+.card-project {
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
+
+  .image {
+
+    img {
+      border-radius: 7px 7px 0px 0px;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  .content {
+    padding: 24px;
+    background-color: $w0;
+    border-radius: 0px 0px 7px 7px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+
+    .title-project {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+
+      h4 {
+        font: 600 1.275rem 'Poppins';
+      }
+    }
+
+    .project-skills {
+      margin-bottom: 32px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+
+      .skill {
+        display: flex;
+        gap: 7px;
+        padding: 2px 12px;
+        border-radius: 4px;
+        background-color: $c1;
+        align-items: center;
+        font: 500 1rem 'Poppins';
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+
+        .circle {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+        }
+
+      }
+    }
+
+    p {
+      font: 400 1.125rem/1.5 "Roboto";
+      color: $c3;
+      margin-bottom: 24px;
+    }
+
+    a {
+      font: 600 1.125rem "Poppins";
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+  }
+
+}
+
+.card-project:hover {
+  transform: scale(1.05);
+  transition: .6s;
+}
+
+@media(max-width: 1000px){
+  .card-project{
+    width: 100%;
+  }
+
+  .card-project:hover {
+    transform: none;
+    transition: none;
+  }
+  
+
+}

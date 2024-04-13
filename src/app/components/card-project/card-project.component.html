@@ -1,0 +1,28 @@
+<div class="card-project">
+  <a [href]="links" target="_blank">
+    <div class="image">
+      <img width="1735" height="986" [src]="pathImage" alt="">
+    </div>
+    <div class="content">
+      <div class="title-project">
+        <div>
+          <img src="assets/svg/portfolio-icon.svg" alt="">
+        </div>
+        <h4>{{ title }}</h4>
+      </div>
+      <div class="project-skills">
+        <div class="skill" *ngFor="let item of items">
+          <div *ngIf="item.color" class="circle" [ngStyle]="{'background-color': item.color}"></div>
+          <span>{{ item.name }}</span>
+        </div>
+      </div>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <a href="">
+        Ver mais
+        <div>
+          <img src="assets/svg/seta.svg" alt="">
+        </div>
+      </a>
+    </div>
+  </a>
+</div>
