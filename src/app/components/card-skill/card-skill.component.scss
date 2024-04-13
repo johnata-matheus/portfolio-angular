@@ -1,0 +1,39 @@
+@import '../../../styles/variables.scss';
+
+.card {
+  padding: 30px;
+  min-width: 240px;
+  background-color: $w0;
+  border-radius: 7px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+  position: relative;
+
+  h3 {
+    font: 600 1.5rem/1.3 'Poppins';
+    margin-bottom: 40px;
+  }
+
+  ul {
+    display: grid;
+    gap: 24px;
+  }
+
+  li {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    color: $c3;
+    font: 400 1.125rem 'Roboto';
+  }
+
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 25px;
+  top: 35px;
+  left: -5px;
+  background-color: $b2;
+}
