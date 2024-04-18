@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class EmailService {
-  private readonly APIUrl = `${environment.baseApiUrl}/sending-email`;
+  private readonly APIUrl = `${environment.BASE_API_URL}/sending-email`;
 
   constructor(private httpClient: HttpClient) { }
 
