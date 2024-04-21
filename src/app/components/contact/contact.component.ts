@@ -24,15 +24,17 @@ export class ContactComponent {
   
   sendEmail(form: IEmail){
     this.emailService.sendEmail(form).subscribe(
-      (res) => {
-        this.stateForm = true;
-        this.toastr.success("Mensagem enviada com sucesso!");
-        this.emailForm.resetForm();
-      },
-      (error) => {
-        this.toastr.error("Erro ao enviar a mensagem, tente novamente mais tarde.");
-        this.stateForm = false;
+      {
+        next: () => {
+          this.stateForm = true;
+          this.toastr.success("Mensagem enviada com sucesso!");
+          this.emailForm.resetForm();
+        },
+        error: (e) => {
+          this.toastr.error("Erro ao enviar a mensagem, tente novamente mais tarde.");
+          this.stateForm = false;
+        }
       }
-    )
+    );
   }
 }

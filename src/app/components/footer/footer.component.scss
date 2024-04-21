@@ -7,8 +7,8 @@
     padding: 32px 20px 32px 20px;
     display: flex;
     justify-content: space-between;
-    align-items: start;
-    gap: 60px;
+    align-items: center;
+    gap: 40px;
 
     .logo {
       display: grid;
@@ -25,7 +25,7 @@
 
 
       h4 {
-        font: 500 1.25rem 'Roboto';
+        font: 600 1.125rem 'Poppins';
         padding: 22px 0px;
         margin-bottom: 8px;
       }
@@ -48,11 +48,42 @@
 @media(max-width: 800px){
   .footer-bg{
     .footer{
-      gap: 40px;
+      align-items: start;
+      gap: 80px;
+      justify-content: left;
 
       .navigation{
         ul{
-          flex-wrap: wrap;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 600px){
+  .footer-bg{
+    .footer{
+      gap: 60px;
+      flex-direction: column;
+      
+      .logo{
+        order: 2;
+
+        img{
+          display: none; 
+        }
+
+        span{
+          margin: 0px;
+        }
+      }
+
+      .navigation{
+        order: 1;
+
+        ul{
+          flex-direction: column;
         }
       }
     }
