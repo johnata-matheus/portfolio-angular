@@ -21,4 +21,7 @@ export class CardProjectComponent {
   @Input()
   items: { name: string, color: string }[] = [];
 
+  @Input()
+  description: string = '';
+
 }

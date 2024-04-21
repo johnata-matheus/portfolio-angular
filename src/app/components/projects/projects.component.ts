@@ -46,5 +46,10 @@ export class ProjectsComponent {
     ]
   ]
 
-
+  description: string[] = [
+    'Desenvolvido de maneira detalhada desde o figma, essa aplicação destaca minha experiência, habilidades e projetos desenvolvidos.',
+    'Finance é uma aplicação de gerenciamento financeiro, projetado para facilitar o controle de despesas pessoais de maneira fácil e organizada.',
+    'Este projeto se trata de uma API desenvolvida com base em um jogo, onde é possivel gerenciar um campeão e suas respectivas habilidades.',
+    'Bikcraft é um site fictício revolucionário que oferece uma experiência completa para entusiastas de bicicletas elétricas. '
+  ] 
 }

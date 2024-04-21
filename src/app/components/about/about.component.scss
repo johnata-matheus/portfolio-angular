@@ -16,7 +16,7 @@
 
       .card-container {
         display: flex;
-        gap: 20px;
+        gap: 36px;
         justify-content: space-between;
         margin-bottom: 36px;
         width: 100%;
@@ -24,7 +24,7 @@
         .card-item {
           display: grid;
           justify-items: center;
-          gap: 20px;
+          gap: 12px;
           padding: 20px 64px;
           width: 100%;
           border-radius: 7px;
@@ -73,6 +73,7 @@
       .grid{
         
         .card-container{
+          
 
           .card-item{
             padding: 20px 40px;
