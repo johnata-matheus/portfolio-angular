@@ -6,11 +6,14 @@
       </a>
     </div>
     <nav>
+      <button class="menu-mobile" (click)="toggleMenu()">
+        <span id="hamburger"></span>
+      </button>
       <ul class="menu">
-        <li><a href="#about">Sobre</a></li>
-        <li><a href="#skills">Habilidades</a></li>
-        <li><a href="#projects">Projetos</a></li>
-        <li><a href="#contact">Contate-me</a></li>
+        <li><a href="#about" (click)="toggleMenu()">Sobre</a></li>
+        <li><a href="#skills" (click)="toggleMenu()">Habilidades</a></li>
+        <li><a href="#projects" (click)="toggleMenu()">Projetos</a></li>
+        <li><a href="#contact" (click)="toggleMenu()">Contate-me</a></li>
       </ul>
     </nav>
   </div>
