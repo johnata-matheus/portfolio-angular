@@ -83,7 +83,11 @@
       overflow-y: auto;
     }
 
-    .menu li:hover{
+    .menu a{
+      display: grid;
+    }
+
+    .menu a:hover{
       background-color: aliceblue;
     }
 
@@ -103,6 +107,7 @@
       display: block;
       border: none;
       background: none;
+      cursor: pointer;
     }
 
     .menu.active{
