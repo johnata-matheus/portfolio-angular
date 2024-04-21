@@ -30,12 +30,20 @@
     display: inline-block;
   }
 
+  .menu a:hover{
+    color: $b2;
+  }
+
   .menu li:last-child a {
     padding: 12px 24px;
     border: 1px solid $b2;
     border-radius: 7px;
     text-transform: uppercase;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+  }
+
+  .menu li:last-child a:hover{
+    background-color: $c1;
   }
 
   .menu-mobile{
@@ -128,10 +136,6 @@
       height: 2px;
       background: currentColor;
       margin-top: 5px;
-    }
-
-    .menu.active .menu-mobile #hamburger{
-      background: blue;
     }
   }
 }
