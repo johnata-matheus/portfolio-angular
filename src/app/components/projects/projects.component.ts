@@ -17,7 +17,7 @@ export class ProjectsComponent {
   pathColab: string = 'assets/jpg/colab.jpg';
 
   link: string[][] = [
-    ['https://github.com/johnata-matheus/portfolio'],
+    ['https://github.com/johnata-matheus/portfolio-angular'],
     ['https://github.com/johnata-matheus/api-finance'],
     ['https://github.com/johnata-matheus/desafio-api-colab'],
     ['https://github.com/johnata-matheus/bikcraft']
