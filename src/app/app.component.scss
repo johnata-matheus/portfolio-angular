@@ -561,7 +561,7 @@
 
       .forms {
         border-radius: 0px 15px 15px 0px;
-        background-color: $w0;
+        background-color: $c1;
         border: 2px solid $c2;
         border-left: none;
 
@@ -588,7 +588,7 @@
             border: 2px solid $c2;
             border-radius: 7px;
             width: 100%;
-            background-color: $c1;
+            background-color: $w0;
             font: 400 1rem 'Roboto';
             color: $c3;
             box-sizing: border-box;
@@ -640,11 +640,13 @@
         grid-template-columns: 1fr;
 
         .contact-info{
-          border-radius: 7px 7px 0px 0px;
+          border-radius: 15px 15px 0px 0px;
           padding: 20px;
         }
 
         .forms{
+          border-left: 2px solid $c2;
+          border-radius: 0px 0px 15px 15px;
 
           form {
             padding: 20px;
