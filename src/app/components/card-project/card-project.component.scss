@@ -3,12 +3,12 @@
 .card-project {
   display: flex;
   justify-content: space-between;
-  width: 450px;
+  width: 530px;
 
   .image {
 
     img {
-      border-radius: 7px 7px 0px 0px;
+      border-radius: 15px 15px 0px 0px;
       object-fit: cover;
       width: 100%;
     }
@@ -16,9 +16,10 @@
 
   .content {
     padding: 24px;
-    background-color: $w0;
-    border-radius: 0px 0px 7px 7px;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+    background-color: $c1;
+    border-radius: 0px 0px 15px 15px;
+    border: 2px solid $c2;
+    border-top: none;
 
     .title-project {
       display: flex;
@@ -42,10 +43,10 @@
         gap: 7px;
         padding: 2px 12px;
         border-radius: 4px;
-        background-color: $c1;
+        background-color: $w0;
         align-items: center;
         font: 500 1rem 'Poppins';
-        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
 
         .circle {
           width: 10px;

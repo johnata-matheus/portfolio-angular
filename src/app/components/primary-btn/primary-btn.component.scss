@@ -3,8 +3,8 @@
 .btn{
   padding: 12px 24px;
   font: 600 1.125rem 'Poppins';
-  background: linear-gradient($b1, $b3);
-  color: $b4;
+  background: linear-gradient($b2, $b1);
+  color: $w0;
   text-transform: uppercase;
   border: none;
   border-radius: 7px;
@@ -12,5 +12,5 @@
 }
 
 .btn:hover {
-  background: linear-gradient($b5, $b3);
+  background: linear-gradient($b1, $b2);
 }
